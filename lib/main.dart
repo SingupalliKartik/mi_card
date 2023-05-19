@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(MyApp());
 }
@@ -13,13 +13,21 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.tealAccent,
         body: SafeArea(
-          child: Container(
-            height: 100.0,
-            width: 100.0,
-            margin: EdgeInsets.all(15.0),
-            padding: EdgeInsets.all(20.0),
-            color: Colors.white,
-            child: Text("Hellp"),
+          child:Column(
+            children: [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage:AssetImage('images/photo.jpg'),
+              ),
+              Text("Singupalli kartik",
+              )
+
+
+
+
+
+
+            ],
           ),
         ),
       ),
